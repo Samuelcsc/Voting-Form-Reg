@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter's Registration</title>
+    <link href="./index.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="grad">
+    <form action="contact.php" method="POST">
+        <h4>Register to Vote</h4><br>
+        <input type="text" name="fname" placeholder="First Name" size="30" autofocus/>
+        <input type="text" name="lname" placeholder="Last Name" size="30"/>
+        <input type="email" name="email" placeholder="Email" size="30"/>
+        <input type="tel" name="phone" placeholder="Phone" size="30"/> <br>
+        <input list="state" name="state" placeholder="Choose your state" size="30">
+        <datalist id="state">
+            <option value="Abia">
+            <option value="Bauchi">
+            <option value="Cross River">
+            <option value="Delta">
+            <option value="Edo">
+            <option value="Gombe">
+            <option value="Imo">
+            <option value="Jigawa">
+            <option value="Kaduna">
+            <option value="Lagos">
+            <option value="Niger">
+            <option value="Oyo">
+            <option value="Rivers">
+            <option value="Yobe">
+        </datalist>
+        <input type="text" name="occupation" placeholder="Occupation" size="30"/> <br><br>
+        <strong>Gender</strong><br>
+        <input type="radio" name="gender" value="male"/> Male
+        <input type="radio" name="gender" value="female"> Female<br><br>
+        <strong>Date of Birth</strong><br>
+        <input type="date" name="bday"><br><br>
+        <input type="checkbox" name="confirm" value="confirm"> <strong>I confirm that I am 18 years and above</strong><br><br>
+        <input type="submit" value="Register" class="submit" >
+    </form>
+    </div>
+</body>
+</html>
